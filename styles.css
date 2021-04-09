@@ -1,11 +1,9 @@
 .navbar a {
   color: white;
-}
-a {
-  color: white;
-  font-size: 20px;
-  font-weight: 200;
+  font-weight: bold;
+  font-size: 60px;
   margin-left: 25px;
+  text-decoration: none;
 }
 
 body,
@@ -57,7 +55,6 @@ html {
   background-color: #ff4c60;
 }
 .img {
-  opacity: 1;
   transition: 0.5s ease;
   backface-visibility: hidden;
   display: block;
@@ -69,6 +66,14 @@ html {
   filter: grayscale(100%);
 }
 .img:hover {
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+.card-img-top {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.card-img-top:hover {
   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
 }
@@ -174,4 +179,33 @@ html {
   opacity: 0;
   animation-name: fadeInRight;
   -webkit-animation-name: fadeInRight;
+}
+
+body {
+  background: #eee;
+}
+span {
+  font-size: 15px;
+}
+a {
+  text-decoration: none;
+  color: #0062cc;
+  border-bottom: 2px solid #0062cc;
+}
+.box {
+  padding: 60px 0px;
+}
+
+.box-part {
+  background: #fff;
+  border-radius: 0;
+  padding: 60px 10px;
+  margin: 30px 0px;
+}
+.text {
+  margin: 20px 0px;
+}
+
+.fa {
+  color: #4183d7;
 }
